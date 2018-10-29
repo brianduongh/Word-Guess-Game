@@ -3,8 +3,12 @@ body {
   color: white;
   background: teal;
   text-align: center;
+  font-size: 2rem;
 }
 
+body, html, .flex {
+  height: 100%;
+}
 /* .container {
   width: 100%;
   max-width: 960px;
@@ -16,16 +20,56 @@ body {
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 100px 20px 0px 20px;
-  font-size: 2rem;
+  flex-direction: column;
+}
+
+#instructions {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+  margin: 20px 20px 0 20px;
+}
+
+#game {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+}
+
+#game .underScore {
+  font-size: 3rem;
+}
+
+#stats {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
 }
 
 h1 {
   font-weight: bold;
 }
 
-.underScore {
-  margin: 20px 0px;
+@media only screen and (min-width: 800px) {
+  .flex {
+    font-size: 3rem;
+  }
+  #instructions {
+    margin-top: 40px;
+  }
+  #game .underScore {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .flex {
+    font-size: 4rem;
+  }
+  #instructions {
+    margin-top: 50px;
+  }
+  #game .underScore {
+    font-size: 5rem;
+  }
 }

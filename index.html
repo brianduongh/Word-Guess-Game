@@ -9,17 +9,22 @@
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body>
+<body id="body">
 
   <div class="flex">
-    <h1>Press any key to play!</h1>
-    <div class="container">
+    <div id="instructions">
+      <h1>Hangman</h1>
+      <h2>Press any key to play!</h2>
+    </div>
+    <div id="game">
       <p class="underScore"><span id="under-score"></span></p>
       <p>Letters Guessed:</p>
-      <p class="wrongLetters"><span id="wrong-letters"></span></p>
+      <p><span id="wrong-letters"></span></p>
+    </div>
+    <div id="stats">
       <p>Guesses Left: <span id="guesses-left">5</span></p>
       <p>Wins: <span id="wins">0</span></p>
-      <p>Losses: <span id="losses">0</span></p>
+      <p >Losses: <span id="losses">0</span></p>
     </div>
   </div>
 
